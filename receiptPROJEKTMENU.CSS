@@ -16,3 +16,13 @@ h1{
     padding: 15px;
     border: solid;
 }
+
+.option:active{
+    color: rgba(255, 0, 0, 0.549);
+ }
+ 
+ h1:hover{
+
+color: rgba(255, 255, 0, 0.47);
+    font-size: 2.5;
+ }
