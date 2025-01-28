@@ -6,7 +6,7 @@ body{
     margin: 0;
 }
 
-h1{
+.optionCourse{
     color: rgb(255, 255, 255);  
     background-color: rgba(255, 250, 205, 0.389); 
     display: inline-block; 
@@ -15,6 +15,7 @@ h1{
     text-shadow: 2px 2px 5px rgba(255, 166, 0, 0.707);
     padding: 15px;
     border: solid;
+    
 }
 
 .option:active{
@@ -25,4 +26,16 @@ h1{
 
 color: rgba(255, 255, 0, 0.47);
     font-size: 2.5;
+ }
+ .title{
+    color: rgb(255, 255, 255);  
+    background-color: ; 
+    display: inline-block;
+    font-size: 5;
+    border-radius: 30px;
+    text-shadow: 2px 2px 5px rgba(255, 166, 0, 0.707);
+    padding: 15px;
+    border: solid;
+    position: relative;
+    left: 40%;
  }

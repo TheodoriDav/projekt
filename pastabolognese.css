@@ -1,0 +1,16 @@
+body{
+    background:linear-gradient(to right ,rgb(220, 40, 30),rgb(120, 70, 40),rgb(215, 180, 120));
+    background-size: 400% 400%;
+    animation: gradient  20s ease-in-out infinite;
+    height: 100vh;
+
+}
+
+@keyframes gradient {
+    0%,100%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+}
