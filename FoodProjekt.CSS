@@ -4,6 +4,7 @@ body {
    background-repeat: no-repeat;
    background-position: center;
    background-attachment:fixed ;
+   
 }
 
 #menu{
@@ -18,14 +19,17 @@ h1{
    display: inline-block; 
    font-size: 2;
    border-radius: 30px;
-   text-shadow: 2px 2px 5px rgba(255, 166, 0, 0.707);
+   text-shadow: 2px 2px 5px rgba(255, 166, 0, 0.866);
    padding: 15px;
    border: solid;
+   display: flex;
+   justify-content: center;
+   
 }
 
 h1:hover{
 
-   color: rgba(255, 255, 0, 0.47);
+   color: rgba(210, 105, 30);
    font-size: 2.5;
 }
 
@@ -36,6 +40,14 @@ hr{
 }
 
 
-.option:active{
-   color: rgba(255, 0, 0, 0.549);
+.option:hover{font-size: 2.5;
+   transform: scale(1.1);
+   box-shadow: 2px 2px 2px 5px ;}
+
+   .option:active{
+   color: rgba(112, 255, 2, 0.549);
+ scale: 1;
+ box-shadow: 2px 2px 2px 5px; 
+
 }
+
