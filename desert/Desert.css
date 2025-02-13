@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(100, 50, 25);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+@media (max-width: 600px){
+    .desertPictures{
+        font-size: 0.7rem;
+        }
+    }
+    
+.desertPic{
+    font-size: 30px; 
+    color: rgba(255, 255, 255, 0.896); 
+    border-radius: 25px; 
+    border: solid;
+    margin: 6px;
+    }
