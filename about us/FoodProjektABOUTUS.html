@@ -14,7 +14,69 @@
     </div>
 </div>
 
+<div class="container">
+    <h1>Contact Me</h1>
+    
+    <div class="info-section">
+        <p>If you'd like to get in touch, feel free to email me directly at:</p>
+        <p><strong>Email:</strong> <a href="mailto:thodorisgate792@hotmail.com">Theodav@gmail.com</a></p>
+        <p>Alternatively, you can send me a message using the form below:</p>
+    </div>
+    
+    <form id="contact-form" action="mailto:examplemail@gmail.com" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Theo Dav"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="examplemail@gmail.com"><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="I would like to have a burger recipe"></textarea><br>
+
+        <button type="submit" class="button">Submit</button>
+    </form>
+</div>
+
+<style>
+.container{
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.623);
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+}
+.button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #45a049;
+}
+.button:active{
+    background-color: #3e8e41;
+    font-size: 0.9rem;
+    
+}
+
+</style>
 <script>
+    function validateForm() {
+        var email = document.getElementById('email').value;
+        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            return false;
+        }
+        return true;
+    }
+
 document.getElementById("body").style.backgroundColor = "rgba(260, 260, 260, 0.500)";
 document.getElementById("body").style.color ="white";
 document.getElementById("body").style.border = "2px solid black";
@@ -30,6 +92,8 @@ document.getElementById("wholePage").style.backgroundSize = "cover";
 document.getElementById("wholePage").style.backgroundRepeat = "no-repeat";
 document.getElementById("wholePage").style.backgroundPosition = "center";
 document.getElementById("wholePage").style.backgroundAttachment = "fixed";
+
+
 
 </script>
 </body>
