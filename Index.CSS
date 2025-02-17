@@ -38,7 +38,7 @@ h1{
 }
 
 
-h1:hover{
+.option:hover{
 
    color: rgba(210, 105, 30);
    font-size: 2.5;
